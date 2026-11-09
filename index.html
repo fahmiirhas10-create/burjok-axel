@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kasir Burjo Axel 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>🍜 Burjo Axel 2 · Kasir</h1>
+<nav><button id="nk" class="on">Kasir</button><button id="nr">Riwayat</button></nav>
+</header>
+
+<main id="vk" class="k">
+<section class="card">
+<input id="cari" placeholder="Cari menu…" autocomplete="off">
+<div class="tabs" id="tabs"></div>
+<div class="grid" id="menu"></div>
+</section>
+<section class="card">
+<h3 style="margin:0 0 6px">Pesanan</h3>
+<input id="meja" placeholder="Meja / nama pembeli (opsional)">
+<div id="cart" style="margin-top:6px"></div>
+<div class="tot"><span>Total</span><span id="total">Rp0</span></div>
+<input id="tunai" type="number" inputmode="numeric" placeholder="Uang tunai (Rp)">
+<div class="quick" id="quick"></div>
+<div class="tot" style="font-size:1.05rem"><span>Kembalian</span><span id="kemb">Rp0</span></div>
+<button class="btn" id="bayar" disabled>Bayar</button>
+<button class="btn s" id="kosong">Kosongkan pesanan</button>
+</section>
+</main>
+
+<main id="vr" class="hide">
+<section class="card">
+<h3 style="margin:0 0 6px">Riwayat hari ini</h3>
+<div id="sum" class="mut"></div>
+<div id="hist"></div>
+<button class="btn s" id="hapus">Hapus semua riwayat</button>
+</section>
+</main>
+
+<div id="struk"><div class="card">
+<div style="text-align:center"><b>BURJO AXEL 2</b><br><span id="sw"></span></div>
+<div id="si" style="margin:8px 0"></div>
+<div id="ss"></div>
+<p style="text-align:center">Terima kasih 🙏</p>
+<button class="btn no" onclick="window.print()">Cetak struk</button>
+<button class="btn s no" id="baru">Transaksi baru</button>
+</div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
